@@ -94,5 +94,61 @@ $ python noisy.py --help
 以上选项中只有--config配置文件是必须指定的
 
 #### 容器化使用
-working in progress.
+
+镜像仓库: https://quay.io/repository/zhao_kunqi/noisy-for-mainland-china?tab=tags
+
+##### 快速使用指南:
+
+```
+#适用环境:
+#    操作系统: Rocky Linux 9 Minimal
+#    额外安装软件 podman
+
+dnf install podman -y
+# 如果系统没有安装Podman, 使用dnf安装podman容器引擎
+
+podman pull quay.io/zhao_kunqi/noisy-for-mainland-china:latest
+# 获取镜像
+
+podman run -itd --name=noisy-01 quay.io/zhao_kunqi/noisy-for-mainland-china:latest
+# 使用刚才获得的镜像,在后台创建启动一个名为noisy-01的容器.
+# 此操作成功执行后, 脚本会开始运作.
+
+podman generate systemd noisy-01 > /etc/systemd/system/noisy-01.service
+# 给刚才创建启动的noisy-01容器生成systemd文件
+# 放在/etc/systemd/system/目录下
+
+systemctl daemon-reload
+# 让systemd重载.
+
+systemctl enable noisy-01.service --now
+# 在systemd中给刚才创建的noisy-01容器设置开机自启
+
+systemctl status noisy-01.service
+#检查容器状态
+```
+
+如果你只需要一个后台运行开机自启的噪音制造源,那么上面的这些操作就可以了.
+
+##### 如果你觉得一个不够,可以创建多个容器同时运行制造更大的噪音:
+
+```
+podman run -itd --name=noisy-02 quay.io/zhao_kunqi/noisy-for-mainland-china:latest
+# 创建启动一个名为noisy-02的容器
+
+podman generate systemd noisy-02 > /etc/systemd/system/noisy-02.service
+# 给刚才创建启动的noisy-02容器生成systemd文件 noisy-02.service
+# 放在/etc/systemd/system/目录下
+
+systemctl daemon-reload
+# 让systemd重载.
+
+systemctl enable noisy-02.service --now
+# 在systemd中给刚才创建的noisy-02容器设置开机自启
+
+systemctl status noisy-02.service
+#检查容器状态
+```
+
+还可以把以上示例中的02换成03,04,05,06等来创建更多噪音源,模拟更多的人同时浏览网页.
 
