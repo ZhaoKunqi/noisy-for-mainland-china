@@ -1,5 +1,3 @@
-# currently working in progress, codes and documents incomplete.
-
 # Noisy - 为中华人民共和国境内网络添加支援
 
 Noisy for usage in mainland china, a fork of [1tay/noisy]([https://github.com/1tayH/noisy) .
