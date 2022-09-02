@@ -150,3 +150,9 @@ systemctl status noisy-02.service
 
 还可以把以上示例中的02换成03,04,05,06等来创建更多噪音源,模拟更多的人同时浏览网页.
 
+## Acknowledgments
+
+This project has been inspired by
+- [1tay/noisy](https://github.com/1tayH/noisy)
+- [RandomNoise](http://www.randomnoise.us)
+- [web-traffic-generator](https://github.com/ecapuano/web-traffic-generator)
