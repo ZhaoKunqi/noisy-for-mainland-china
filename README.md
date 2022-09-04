@@ -16,10 +16,6 @@ Noisy for usage in mainland china, a fork of [1tay/noisy]([https://github.com/1t
 
 #### 理论上只需要Python 2或3, 安装了PyPI中requests库, 即可运行.
 
-###### 原作者测试过的平台:
-
-- [x] MacOS High Sierra/Ubuntu 16.04/Raspbian Stretch with Python 2.7 and 3.6
-
 ###### 此Fork测试过的平台:
 
 - [x] RHEL and RHEL的下游发行版
@@ -27,9 +23,6 @@ Noisy for usage in mainland china, a fork of [1tay/noisy]([https://github.com/1t
   - [x] Rocky Linux 8.X with Python 3.6
     
   - [x] Rocky Linux 9.X with Python 3.9 **(推荐使用)**
-    
-- [x] Windows 10 with Python 3.X
-  
 
 ## 开始使用
 
@@ -47,7 +40,7 @@ Noisy for usage in mainland china, a fork of [1tay/noisy]([https://github.com/1t
 
 ```
 dnf install python3-pip -y
-pip install requests
+pip3 install requests
 ```
 
 #### 获取软件的副本
