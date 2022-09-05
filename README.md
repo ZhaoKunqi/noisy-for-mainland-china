@@ -143,6 +143,12 @@ systemctl status noisy-02.service
 
 还可以把以上示例中的02换成03,04,05,06等来创建更多噪音源,模拟更多的人同时浏览网页.
 
+## 多个可用的配置文件可选
+
+1. config_mainland_china_general_purpose.json - 通用, 包含了一些常用网站.
+  
+2. config_mainland_china_programmer.json 程序员包, 包含一些编程课程类网站.
+
 ## Acknowledgments
 
 This project has been inspired by
