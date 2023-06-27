@@ -90,6 +90,8 @@ $ python noisy.py --help
 
 ##### 快速使用指南:
 
+//注：使用Podman是因为它比Docker更简单易用，如果你更喜欢Docker并且想用Docker来运行，那也没有任何问题，只要支持标准容器的容器引擎都可以正常运行的。
+
 ```
 #适用环境:
 #    操作系统: Rocky Linux 9 Minimal
