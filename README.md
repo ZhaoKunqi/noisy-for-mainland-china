@@ -2,7 +2,11 @@
 
 Noisy for usage in mainland china, a fork of [1tay/noisy]([https://github.com/1tayH/noisy) .
 
+Provided a configuration file containing a list of Chinese domestic websites for users in mainland China, along with a container image for easy and quick usage.
+
 来自[1tay的noisy](https://github.com/1tayH/noisy)项目的[fork](https://github.com/ZhaoKunqi/noisy-for-mainland-china), 添加了中华人民共和国墙内网络支援.
+
+为中国大陆地区的用户提供了包含中国国内网站列表的配置文件，并且提供了容器镜像方便快速使用。
 
 ## 这是什么?
 
