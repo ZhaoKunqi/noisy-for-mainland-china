@@ -1,11 +1,5 @@
 # Noisy - 为中华人民共和国境内网络添加支援
 
-## Friendly reminder:
-
-Using this modified noisy.py config it's not recommend if your residence is out side china(ccp china).
-
-If your want generate HTTP/HTTPS noisy outside mainland china(ccp china) for example United States, it's better to use original [noisy](https://github.com/1tayH/noisy) project.
-
 Noisy for usage in mainland china, a fork of [1tay/noisy]([https://github.com/1tayH/noisy) .
 
 Provided a configuration file containing a list of Chinese domestic websites for users in mainland China, along with a container image for easy and quick usage.
@@ -13,6 +7,18 @@ Provided a configuration file containing a list of Chinese domestic websites for
 来自[1tay的noisy](https://github.com/1tayH/noisy)项目的[fork](https://github.com/ZhaoKunqi/noisy-for-mainland-china), 添加了中华人民共和国墙内网络支援.
 
 为中国大陆地区的用户提供了包含中国国内网站列表的配置文件，并且提供了容器镜像方便快速使用。
+
+## Friendly reminder:
+
+Using this modified noisy.py config it's not recommend if your residence is out side china(ccp china).
+
+If your want generate HTTP/HTTPS noisy outside mainland china(ccp china) for example United States, it's better to use original [noisy](https://github.com/1tayH/noisy) project.
+
+## 更新记录
+
+2023-09-10: 
+- 更新了Containerfile和新版配置文件config_mainland_china_general_purpose_v01.json
+- 也同时更新了quay.io上的镜像为noisy-for-mainland-china:2023091002(Quay Security Scan Passed)
 
 ## 这是什么?
 
